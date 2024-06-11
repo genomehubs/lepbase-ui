@@ -125,6 +125,26 @@
             /* text-decoration: none; */
         }
 
+        .image-container {
+            position: relative;
+        }
+
+        .number-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 75%;
+            background: none;
+            color: #31323f66;
+            font-size: 25vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Signika', sans-serif;
+        }
+
         /* Add a media query for viewports less than 200px high */
         @media (max-height: 23em) {
             body {
@@ -171,7 +191,10 @@
             infoContainer.style.display = "none";
         }
     </script>
-    <img src="img/lepbase-icon-orange.png" alt="LepBase Logo">
+    <div class="image-container">
+        <img src="img/lepbase-icon-orange.png" alt="LepBase Logo">
+        <div class="number-overlay">5</div>
+    </div>
     <h1><span id="countdown"></span></h1>
     </div>
     <div class="footer">
