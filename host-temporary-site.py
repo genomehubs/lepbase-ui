@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import functools
 import http.server
 import os
@@ -10,7 +11,15 @@ import subprocess
 directory = "./placeholder"
 
 # Set the port number for the web server
-port = 8000
+# Parse command line arguments
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "-p", "--port", type=int, default=8000, help="Port number for the web server"
+)
+args = parser.parse_args()
+
+# Set the port number for the web server
+port = args.port
 
 
 # Create a handler to serve the files
