@@ -31,7 +31,7 @@ jobs:
           GH_API_URL: "https://lepbase.org/api/v2"
           GH_ARCHIVE: "latest"
           GH_BASENAME: ""
-          GH_SITENAME: GoaT
+          GH_SITENAME: LepBase
           GH_SUGGESTED_TERM: Nymphalidae
       - uses: actions/upload-artifact@v4
         with:
